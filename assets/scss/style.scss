@@ -15,6 +15,7 @@ $icons: #a6abc8;
 $hover: #707fdd;
 $hover-color: #5a6acf;
 $search: #627b87;
+$buttons: #dde4f0;
 
 @font-face {
   font-family: "Poppins";
@@ -36,7 +37,7 @@ body {
   padding: 0;
 }
 .sidebar {
-  height: auto;
+  height: 100vh;
   width: 240px;
   background-color: $primary;
 }
@@ -121,15 +122,14 @@ body {
 }
 nav {
   display: flex;
-  align-items: center; 
-  justify-content: space-between; 
+  align-items: center;
+  justify-content: space-between;
   padding: 20px 32px;
 
   .searchbar {
     position: relative;
     width: 582px;
     height: 32px;
-
 
     input {
       width: 100%;
@@ -164,7 +164,6 @@ nav {
     display: flex;
     align-items: center;
     gap: 10px;
-
 
     .acc-icon {
       width: 32px;
@@ -218,4 +217,92 @@ nav {
 
 .main {
   flex: 1;
+
+  .layout {
+    padding: 20px 32px;
+
+    h1 {
+      font-weight: 400;
+      font-size: 20px;
+      color: $maintext;
+    }
+
+    .graphs {
+      .row-1 {
+        display: flex;
+        gap: 40px;
+        .rev-card {
+          flex: 60%;
+          .sub-text {
+            h2 {
+              font-weight: 500;
+              font-size: 20px;
+              margin-top: -10px;
+              margin-bottom: 5px;
+            }
+            font-size: 12px;
+            .up {
+              color: $high-info;
+              font-weight: 600;
+            }
+            .line {
+              color: $text-color;
+              opacity: 50%;
+            }
+          }
+          .sales-text {
+            font-size: 13px;
+            letter-spacing: 0.5px;
+            color: $text-color;
+            opacity: 50%;
+          }
+        }
+
+        .order-card {
+          flex: 40%;
+          .sub-text {
+            margin-top: -27px;
+            font-size: 13px;
+            letter-spacing: 0.5px;
+            color: $text-color;
+            opacity: 50%;
+          }
+        }
+
+        .rev-card,
+        .order-card {
+          padding: 16px;
+          padding-left: 0;
+
+          .rev,
+          .order {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            p {
+              font-size: 14px;
+              font-weight: 500;
+              color: $maintext;
+            }
+
+            button {
+              font-size: 12px;
+              padding: 8px 20px;
+              border: none;
+              border-radius: 4px;
+              cursor: pointer;
+              background-color: #5a6acf0f;
+              color: #5a6acf;
+              border: 1px solid #00000014;
+              box-shadow: 0 2px 6px rgb(0 0 0 / 6%);
+              font-weight: 500;
+              letter-spacing: 0.5px;
+              color: #5a6acf;
+            }
+          }
+        }
+      }
+    }
+  }
 }

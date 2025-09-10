@@ -17,7 +17,7 @@ body {
 }
 
 .sidebar {
-  height: auto;
+  height: 100vh;
   width: 240px;
   background-color: #f1f2f7;
 }
@@ -188,6 +188,92 @@ nav .account .notif-icon::after {
 
 .main {
   flex: 1;
+}
+.main .layout {
+  padding: 20px 32px;
+}
+.main .layout h1 {
+  font-weight: 400;
+  font-size: 20px;
+  color: #1f384c;
+}
+.main .layout .graphs .row-1 {
+  display: flex;
+  gap: 40px;
+}
+.main .layout .graphs .row-1 .rev-card {
+  flex: 60%;
+}
+.main .layout .graphs .row-1 .rev-card .sub-text h2 {
+  font-weight: 500;
+  font-size: 20px;
+  margin-top: -10px;
+  margin-bottom: 5px;
+}
+.main .layout .graphs .row-1 .rev-card .sub-text {
+  font-size: 12px;
+}
+.main .layout .graphs .row-1 .rev-card .sub-text .up {
+  color: #149d52;
+  font-weight: 600;
+}
+.main .layout .graphs .row-1 .rev-card .sub-text .line {
+  color: #000000;
+  opacity: 50%;
+}
+.main .layout .graphs .row-1 .rev-card .sales-text {
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  color: #000000;
+  opacity: 50%;
+}
+.main .layout .graphs .row-1 .order-card {
+  flex: 40%;
+}
+.main .layout .graphs .row-1 .order-card .sub-text {
+  margin-top: -27px;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  color: #000000;
+  opacity: 50%;
+}
+.main .layout .graphs .row-1 .rev-card,
+.main .layout .graphs .row-1 .order-card {
+  padding: 16px;
+  padding-left: 0;
+}
+.main .layout .graphs .row-1 .rev-card .rev,
+.main .layout .graphs .row-1 .rev-card .order,
+.main .layout .graphs .row-1 .order-card .rev,
+.main .layout .graphs .row-1 .order-card .order {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .layout .graphs .row-1 .rev-card .rev p,
+.main .layout .graphs .row-1 .rev-card .order p,
+.main .layout .graphs .row-1 .order-card .rev p,
+.main .layout .graphs .row-1 .order-card .order p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1f384c;
+}
+.main .layout .graphs .row-1 .rev-card .rev button,
+.main .layout .graphs .row-1 .rev-card .order button,
+.main .layout .graphs .row-1 .order-card .rev button,
+.main .layout .graphs .row-1 .order-card .order button {
+  font-size: 12px;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: rgba(90, 106, 207, 0.0588235294);
+  color: #5a6acf;
+  border: 1px solid rgba(0, 0, 0, 0.0784313725);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  color: #5a6acf;
 }
 
 /*# sourceMappingURL=style.css.map */
